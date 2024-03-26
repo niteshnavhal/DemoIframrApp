@@ -17,7 +17,7 @@ function App() {
     // Ensure DOM is fully loaded before accessing elements
     const iframe = document.getElementById("iframe");
     iframe.src = url;
-  }, []); // Empty dependency array ensures this effect runs only once after initial render
+  }, [url]); // Empty dependency array ensures this effect runs only once after initial render
 
   return (
     <div>
